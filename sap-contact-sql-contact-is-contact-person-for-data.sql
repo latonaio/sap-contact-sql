@@ -1,0 +1,33 @@
+CREATE TABLE `sap_contact_is_contact_person_for_data`
+(
+	        `ObjectID`                                  varchar(70) DEFAULT NULL,
+			`ParentObjectID`                            varchar(70) DEFAULT NULL,
+			`ETag`                                      varchar(80) DEFAULT NULL,
+			`ContactID`                                 varchar(10) NOT NULL,
+			`AccountID`                                 varchar(10) DEFAULT NULL,
+			`AccountFormattedName`                      varchar(480) DEFAULT NULL,
+			`ReverseMainIndicator`                      tinyint(1) DEFAULT NULL,
+			`DepartmentCode`                            varchar(4) DEFAULT NULL,
+			`DepartmentCodeText`                        varchar(70) DEFAULT NULL,
+			`FunctionCode`                              varchar(4) DEFAULT NULL,
+			`FunctionCodeText`                          varchar(32) DEFAULT NULL,
+			`VIPReasonCode`                             varchar(1) DEFAULT NULL,
+			`VIPReasonCodeText`                         varchar(32) DEFAULT NULL,
+			`JobTitle`                                  varchar(40) DEFAULT NULL,
+			`Department`                                varchar(40) DEFAULT NULL,
+			`Building`                                  varchar(10) DEFAULT NULL,
+			`Floor`                                     varchar(10) DEFAULT NULL,
+			`Room`                                      varchar(10) DEFAULT NULL,
+			`Email`                                     varchar(255) DEFAULT NULL,
+			`EmailInvalidIndicator`                     tinyint(1) DEFAULT NULL,
+			`Fax`                                       varchar(40) DEFAULT NULL,
+			`Mobile`                                    varchar(40) DEFAULT NULL,
+			`Phone`                                     varchar(40) DEFAULT NULL,
+			`BestReachedByCode`                         varchar(3) DEFAULT NULL,
+			`BestReachedByCodeText`                     varchar(32) DEFAULT NULL,
+			`OrganisationAddressUUID`                   varchar(80) DEFAULT NULL,
+			`EntityLastChangedOn`                       varchar(80) DEFAULT NULL,
+    PRIMARY KEY (`ContactID`),
+    CONSTRAINT `SAPContactContactIsContactPersonForData` FOREIGN KEY (`ContactID`) REFERENCES `sap_contact_collection_data` (`ContactID`)
+) ENGINE = InnoDB
+ DEFAULT CHARSET = utf8mb4;
