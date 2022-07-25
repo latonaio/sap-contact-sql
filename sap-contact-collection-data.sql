@@ -1,7 +1,7 @@
 CREATE TABLE `sap_contact_collection_data`
 (
-			`ObjectID`                                          varchar(70) DEFAULT NULL,
 			`ContactID`                                         varchar(10) NOT NULL,
+			`ObjectID`                                          varchar(70) DEFAULT NULL,
 			`ContactUUID`                                       varchar(70) DEFAULT NULL,
 			`ExternalID`                                        varchar(100) DEFAULT NULL,
 			`ExternalSystem`                                    varchar(32) DEFAULT NULL,

@@ -1,7 +1,7 @@
 CREATE TABLE `sap_corporate_account_data`
 (
-			`ObjectID`                                          varchar(70) DEFAULT NULL,
 			`AccountID`                                         varchar(10) NOT NULL,
+			`ObjectID`                                          varchar(70) DEFAULT NULL,
 			`UUID`                                              varchar(80) DEFAULT NULL,
 			`ExternalID`                                        varchar(100) DEFAULT NULL,
 			`ExternalSystem`                                    varchar(32) DEFAULT NULL,
