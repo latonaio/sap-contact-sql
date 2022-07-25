@@ -1,4 +1,4 @@
-CREATE TABLE `sap_individual_customer_collection_data`
+CREATE TABLE `sap_contact_individual_customer_collection_data`
 (
 			`ObjectID`                                    varchar(70) NOT NULL,
 			`CustomerID`                                  varchar(10) NOT NULL,

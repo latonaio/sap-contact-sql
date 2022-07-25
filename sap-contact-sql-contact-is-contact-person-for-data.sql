@@ -1,4 +1,4 @@
-CREATE TABLE `sap_contact_is_contact_person_for_data`
+CREATE TABLE `sap_contact_contact_is_contact_person_for_data`
 (
 			`ContactID`                                 varchar(10) NOT NULL,
 	        `ObjectID`                                  varchar(70) NOT NULL,

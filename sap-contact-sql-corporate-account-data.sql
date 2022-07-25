@@ -1,4 +1,4 @@
-CREATE TABLE `sap_corporate_account_data`
+CREATE TABLE `sap_contact_corporate_account_data`
 (
 			`ObjectID`                                          varchar(70) NOT NULL,
 			`AccountID`                                         varchar(10) NOT NULL,
@@ -94,7 +94,7 @@ CREATE TABLE `sap_corporate_account_data`
 			`EntityLastChangedOn`                               varchar(80) DEFAULT NULL,
 			`ETag`                                              varchar(80) DEFAULT NULL,
 			`Mul1`                                              varchar(80) DEFAULT NULL,
-    PRIMARY KEY (`ObjectID`),
-    CONSTRAINT `SAPContactCorporteAccountData` FOREIGN KEY (`ObjectID`) REFERENCES `sap_contact_collection_data` (`ObjectID`)
+    PRIMARY KEY (`ObjectID`, `AccountID`),
+    CONSTRAINT `SAPContactCorporateAccountData` FOREIGN KEY (`ObjectID`) REFERENCES `sap_contact_collection_data` (`ObjectID`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;
